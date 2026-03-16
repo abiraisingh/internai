@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Smooth theme transition */
+
+*{
+transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+
+/* Page base styles */
+
+body{
+@apply bg-gray-50 text-gray-900 dark:bg-black dark:text-white;
+}
+
+
+/* ---------- GLASS CARD ---------- */
+
+.glass-card{
+background:#ffffff;
+border:1px solid #e5e7eb;
+padding:24px;
+border-radius:14px;
+box-shadow:0 2px 10px rgba(0,0,0,0.04);
+}
+
+.dark .glass-card{
+background:#111827;
+border:1px solid #1f2937;
+box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+
+/* ---------- JOB CARD ---------- */
+
+.job-card{
+background:#ffffff;
+border:1px solid #e5e7eb;
+padding:24px;
+border-radius:14px;
+}
+
+.dark .job-card{
+background:#111827;
+border:1px solid #1f2937;
+}
+
+
+/* ---------- CARD TEXT ---------- */
+
+.card-label{
+color:#6b7280;
+font-size:14px;
+}
+
+.dark .card-label{
+color:#9ca3af;
+}
+
+.card-number{
+font-size:28px;
+font-weight:700;
+margin-top:4px;
+}
+
+
+/* ---------- SECTION TITLE ---------- */
+
+.section-title{
+font-size:22px;
+font-weight:600;
+}
+
+
+/* ---------- FILE INPUT ---------- */
+
+.file-input{
+background:#f3f4f6;
+padding:8px;
+border-radius:6px;
+border:1px solid #e5e7eb;
+}
+
+.dark .file-input{
+background:#1f2937;
+border:1px solid #374151;
+}
+
+
+/* ---------- PRIMARY BUTTON ---------- */
+
+.primary-btn{
+background:#2563eb;
+padding:10px 18px;
+border-radius:8px;
+font-weight:500;
+color:white;
+}
+
+.primary-btn:hover{
+background:#1d4ed8;
+}
+
+
+/* ---------- MATCH BUTTON ---------- */
+
+.match-btn{
+background:#16a34a;
+padding:10px;
+width:100%;
+border-radius:8px;
+color:white;
+}
+
+.match-btn:hover{
+background:#15803d;
+}
+
+
+/* ---------- SKILL TAG ---------- */
+
+.skill-tag{
+background:#f3f4f6;
+padding:4px 8px;
+border-radius:6px;
+font-size:12px;
+}
+
+.dark .skill-tag{
+background:#1f2937;
+}
+
+
+/* ---------- PROGRESS BAR ---------- */
+
+.progress-bg{
+height:6px;
+background:#e5e7eb;
+border-radius:4px;
+margin-top:6px;
+}
+
+.dark .progress-bg{
+background:#374151;
+}
+
+.progress-fill{
+height:6px;
+background:#22c55e;
+border-radius:4px;
+}
+
+
+/* ---------- MODAL ---------- */
+
+.modal-bg{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.7);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:50;
+}
+
+.modal-card{
+background:#ffffff;
+padding:28px;
+border-radius:12px;
+width:420px;
+border:1px solid #e5e7eb;
+}
+
+.dark .modal-card{
+background:#111827;
+border:1px solid #1f2937;
+}
